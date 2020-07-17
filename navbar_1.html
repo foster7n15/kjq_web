@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>好康的导航栏和搜索框</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background-color: #057748;
+			background-size: cover;
+			font:italic arial,sans-serif;
+		}
+		.nav1{
+			width: 97%;
+			height: 50px;
+			background: #808080;
+			box-shadow:0 -5px 5px #424c50;
+			margin-top: 50px;
+			border-radius:0 25px 25px 0;					/*圆角*/
+		}
+		.nav1 ul {
+			list-style: none;
+		}
+		.nav1 ul li {
+			color: white;
+			float: left;
+			width: 150px;
+			height: 50px;
+			background-color: #ff8936;
+			margin-right: 2px;
+			font-size: 14px;
+		}
+		.nav1 ul li:hover {
+			background-color: #ff7500;
+		}
+		.nav1 ul li a {
+			text-decoration: none;
+			color: white;
+			display: block;
+			text-align: center;
+			line-height: 50px;
+			font-weight: bold;
+			text-transform: uppercase;				/*字母转换成大写*/
+		}
+		.nav1 ul li ul li {
+			display: none;				/*元素隐藏，且不留空间*/
+			widows: 150px;
+			height: 50px;
+			/*float: initial;*/
+			background-color: #FF8936;
+			font-size: 10px;
+			text-align: center;
+			line-height: 50px;
+			font-weight: 600;
+			border-top: 1px solid #057748;
+		}
+		.nav1 ul li:hover ul li {
+			display: block;
+			width: 200px;
+		}
+		.search{
+		    width: 20%;            
+		    margin: 10px 10px;
+		    display: flex;								/*弹性布局*/
+			float: right;
+			border-radius:25px;							/*圆角*/
+		    /*border: 1px solid #FF8936;*/
+		        }
+		.search input{
+		    float: left;
+		    flex: 4;
+		    height: 30px;
+		    border: 1px solid #FF8936;
+		    box-sizing: border-box;
+		    padding-left: 10px;
+			border-radius:25px 0 0 25px;
+		        }
+		.search button{
+		    float: right;
+			padding: 2px;
+		    flex: 1;
+		    height: 30px;
+		    background-color: #FF8936;
+		    color: white;
+		    border-style: none;
+			border-radius:0 25px 25px 0;
+		        }
+		.search button i{
+		    font-style: normal;
+		        }
+		.search button:hover{
+		    font-size: 16px;
+		        }
+	</style>
+</head>
+<body>
+	<div class="nav1">
+		<div class="search">
+		            <input type="text" placeholder="search..." name="" id="" value="" />
+		            <button><i>SEARCH</i></button>
+		        </div>
+		<ul>
+			<li><a href="#">rich</a>
+				<ul>
+					<li>rich</li>
+					<li>rich</li>
+					<li>rich</li>
+				</ul>
+			</li>
+			<li><a href="#">democratic</a>
+			<ul>
+				<li>democratic</li>
+				<li>democratic</li>
+				<li>democratic</li>
+			</ul>
+			</li>
+			<li><a href="#">civilization</a>
+			<ul>
+				<li>civilization</li>
+				<li>civilization</li>
+				<li>civilization</li>
+			</ul>
+			</li>
+			<li><a href="#">harmonious</a>
+			<ul>
+				<li>harmonious</li>
+				<li>harmonious</li>
+				<li>harmonious</li>
+			</ul>
+			</li>
+			<li><a href="#">free</a>
+			<ul>
+				<li>free</li>
+				<li>free</li>
+				<li>free</li>
+			</ul>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
