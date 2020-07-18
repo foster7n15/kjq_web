@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>导航栏</title>
+	<style type="text/css">
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: "arial black" sans-serif;
+			background-color: #424C50;
+		}
+	.nav ul {
+		position: absolute;
+		display: flex;
+		top: 10%;
+		left: 50%;
+		margin: 0;
+		padding: 0;
+		transform: translate(-50%, -50%);
+		background: #808080;
+		border-radius: 25px;
+		overflow: hidden;										/*溢出时修剪*/
+		box-shadow: 0 0 0 5px #bacac6;
+	}
+	.nav ul li {
+		list-style: none;
+		width: 150px;
+	}
+	.nav ul li a {
+		text-decoration: none;
+		display: block;
+		padding: 20px;
+		text-align: center;
+		color: #FF7500;
+		transition: 0.5s;
+	}
+	.nav ul li a:hover {
+		color: #808080;
+		background-color: #FF7500;
+		font-weight:  bold;
+		/*-webkit-text-stroke: 1px #bacac6;*/							/*字体边框*/
+	}
+	.bo {
+		position: relative;
+		background: #808080;
+		margin: 30px auto;
+		padding: 20px;
+		width: 900px;
+		height: 1500px;
+		top: 100px;
+		border-radius: 8px;
+		box-shadow: 0 1px 3px rgba(0,0,0,.4);
+		text-align: center;
+		color: #FF7500;
+		}
+		
+	.bo h2 {
+		font-size: 30px;
+	}
+	.bo p {
+		font-size: 20px;
+		font-weight: 700;
+	}
+	.box {
+		position: fixed;
+		width: 50px;
+		height: 50px;
+		left: 200px;
+		top: 5%;
+		z-index: 10;
+		margin: 10px;
+		border:5px  solid #bacac6;
+		border-radius: 15px;
+		background-color: #FF7500;
+		cursor: pointer;
+		text-align: center;
+		color: #BACAC6;
+		}
+	.box a img{
+		width:50px;
+		height: 50px;
+		border-radius: 15px;
+	}
+	.box:hover {
+		background-color: #BACAC6;
+	}
+	.dot {
+		color: #BACAC6;
+		font-weight: bold;
+		font-size: 27px;
+		position: absolute;
+		left: 290px;
+		top: 0;
+	}
+	</style>
+</head>
+<body>
+	<div class="nav">
+		<ul>
+			<li><a href="#">rich</a></li>
+			<li><a href="#">democratic</a></li>
+			<li><a href="#">civilization</a></li>
+			<li><a href="#">harmonious</a></li>
+			<li><a href="#" >free</a></li>
+		</ul>
+	</div>
+	<div class="bo">
+		<h2>Sweet VA Breeze</h2>
+		<p>DRAM</p><br>
+		<p>Oh first time we came in together</p>
+		<p>Guess we the ones</p>
+		<p>Feeling cooler than the April breeze</p>
+		<p>As we blow like the summer leaves</p>
+		<p>Girl I'm just hanging around</p>
+		<p>And I'll come back down</p>
+		<p>When you choose to come visit me now</p>
+		<p>The crazy thing about my treehouse</p>
+		<p>It's always me bugging me out</p>
+		<p>It's all of the beautiful sounds</p>
+		<p>That keeps my mouth quiet</p>
+		<p>Cause me I'm being so</p>
+		<p>Loud</p>
+		<p>···</p>
+		<p>···</p>
+		<p>···</p>
+		<p>Real love, feel love, taste love, smoke love</p>
+		<p>Real love (real love)</p>
+		<p>Feel love (feel love)</p>
+		<p>Taste love (taste love)</p>
+		<p>Smoke love (smoke love)</p>
+		<p>Real love, feel love, taste love, smoke love</p>
+		<p>Real love (real love)</p>
+		<p>Feel love (feel love)</p>
+		<p>Taste love (taste love)</p>
+		<p>Smoke love (smoke love)</p>
+		<p>Taste love, taste love, smoke love, smoke love</p>
+	</div>
+	<div class="dot" id="top">
+		<h1>···</h1>
+	</div>
+			<div class="box">    
+				<a href="#top">
+				<img src="img/IMG_6010(20200712-112955).JPG" />
+				<a />
+				TOP
+			</div>     
+		
+</body>
+</html>
