@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>sidebar_2</title>
+	<link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/font_1952483_3k5wk4900wz.css"/>
+	<style type="text/css">
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		background: #FF7500;
+	}
+	.bar {
+		position: fixed;
+		top: 40%;
+		z-index: 99;
+		left: 0;
+	}
+	.sidebar {
+		cursor: pointer;
+		position: relative;
+	}
+	.sidebar i {
+		display: block;
+		width: 60px;
+		height: 60px;
+		text-align: center;
+		line-height: 60px;
+		background: #747474;
+		color: #CCCCCC;
+		font-size: 27px;
+	}
+	.sidebar i:hover {
+		color: white;
+	} 
+	.sidebar_1 {
+		position: absolute;
+		height: 60px;
+		width: 200px;
+		background: #747474;
+		top: 0;
+		z-index: -1;
+		left: -140px;
+		color: #FF7500;
+		line-height: 60px;
+		text-align: center;
+		transition: 0.5s ease;
+		border-radius: 0 5px 5px 0;
+	}
+	.sidebar:hover .sidebar_1{
+		left: 60px;
+	}
+	</style>
+</head>
+<body>
+	<div class="bar">
+	<div class="sidebar">
+		<i class="icon-baijiu- iconfont"></i>
+		<div class="sidebar_1">
+			Tian Jin
+		</div>
+	</div>
+	<div class="sidebar">
+		<i class="icon-hanjie-yingwen iconfont"></i>
+		<div class="sidebar_1">
+			foster7n15@163.com
+		</div>
+	</div>
+	<div class="sidebar">
+		<i class="icon-gonggong-dianhua iconfont"></i>
+		<div class="sidebar_1">
+			+123456789
+		</div>
+	</div>
+	</div>
+</body>
+</html>
